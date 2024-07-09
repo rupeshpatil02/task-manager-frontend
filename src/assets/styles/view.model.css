@@ -1,0 +1,88 @@
+/* CSS for TaskDetailsModal component */
+.task-details-modal .custom-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.task-details-modal .custom-modal-dialog {
+    width: 40%; /* Adjust width as needed */
+    max-width: 800px;
+     /* Maximum width for the modal */
+}
+
+.task-details-modal .modal-content {
+    box-shadow: 0px 0px 10px 0px rgba(26, 7, 7, 0.2);
+}
+
+.task-details-modal .modal-header {
+    border-bottom: none;
+    padding: 20px;
+    background-color: rgba(6, 52, 102, 0.9);
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.task-details-modal .modal-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 40%;
+}
+
+.task-details-modal .modal-body {
+    background-color: rgba(248, 249, 250, 0.9);
+    color: #0a0000;
+    padding-top: 20px;
+    font-weight: bold;
+    background-size: cover; /* Ensure the background image covers the entire modal body */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    overflow-y: hidden; /* Enable vertical scrolling if content overflows */
+    max-height: calc(100vh - 200px);
+   
+}
+
+.task-details-modal .modal-footer {
+    background-color: rgba(155, 188, 221, 0.6);
+    border-top: black;
+    justify-content: center;
+    
+}
+
+.task-details-modal .modal-footer button {
+    background-color: #063466;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.image-container {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+}
+.modal-body {
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.text-content {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    max-height: calc(100% - 40px); /* Adjust the max-height as needed */
+}
+
+.text-content p {
+    margin: 0 0 10px; /* Adjust paragraph margin as needed */
+}

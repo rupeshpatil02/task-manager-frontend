@@ -1,0 +1,23 @@
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    z-index: 9999; /* Ensure it's above other elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-gif {
+    width: 50px; /* Adjust the width of the loading GIF */
+    height: 50px; /* Adjust the height of the loading GIF */
+}
+
+
+.loading-size{
+    width: 100px;
+    margin-top: -6%;
+}

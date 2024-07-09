@@ -1,0 +1,102 @@
+/* list.css */
+.transparent-table {
+  background: rgba(255, 255, 255, 0.3) !important; /* White background with 30% transparency */
+}
+
+.transparent-table th,
+.transparent-table td {
+  background: rgba(255, 255, 255, 0.2) !important; /* White background with 20% transparency */
+}
+
+/* Set max-width and word-wrap for description cells */
+/* Set max-width and white-space properties for description cells */
+.transparent-table td:nth-child(2) {
+  max-width: 50px; /* Adjust max-width as needed */
+  white-space: nowrap; /* Prevent wrapping to new lines */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
+}
+
+
+.container-fluid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../assets/images/listbackground.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+/* modalStyles.css */
+
+/* Center the modal vertically and horizontally */
+
+/* modalStyles.css */
+
+/* Center the modal vertically and horizontally */
+/* Add this to your CSS file */
+.modal-conte {
+  background: rgb(248, 244, 244, 0.9) !important; /* White background with 50% transparency */
+}
+
+/* Add this to your CSS file */
+.modal-dialog {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* modalStyles.css */
+
+/* Change the color of the close button */
+/* modalStyles.css */
+
+/* Change the color and border-radius of the close button in the modal footer */
+.modal-footer button {
+  display: block;
+  margin: 0 auto; /* Auto margin to center the button horizontally */
+  background-color: #063466; /* Change button background color to purple */
+  border: none; /* Remove button border */
+  color: white; /* Set button text color to white */
+  padding: 10px 40px; /* Adjust button padding */
+  border-radius: 5px; /* Optional: Add border radius */
+}
+
+/* Custom CSS for styling dropdown */
+/* Custom CSS for styling dropdown */
+/* Custom CSS for styling dropdown */
+.custom-dropdown {
+  border-radius: 7px; /* Add border-radius for rounded corners */
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+  margin-top: 10px;
+  margin-left: 5px;
+  height: 5.5vh;
+  width: 20vw; /* Use viewport width (vw) */
+  background: transparent;
+  color: black;
+  font-weight: bold; /* Set text to bold */
+}
+
+.add-task-button {
+  position: fixed;
+  bottom: 130px;
+  right: 150px;
+  z-index: 999; /* Ensure the button is above other elements */
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4); /* Gradient background for highlight */
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Add initial border */
+  box-shadow: 0px 0px 10px rgba(14, 0, 0, 0.8), 0px 0px 10px rgba(14, 0, 0, 0.9); /* Add outer shadows */
+  transition: box-shadow 0.3s, background-color 0.3s; /* Add transition for smooth effect */
+}
+
+.add-task-button:hover {
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9), 0px 0px 20px rgba(255, 255, 255, 0.9); /* Highlight effect on hover */
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4); /* Gradient background for highlight */
+}

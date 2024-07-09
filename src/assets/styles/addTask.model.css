@@ -1,0 +1,134 @@
+.custom-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.custom-modal-dialog {
+    width: 60%; /* Adjust width as needed */
+    max-width: 800px; /* Maximum width for the modal */
+}
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+    border-bottom: none;
+    padding: 20px;
+    background-color: #063466;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-title {
+    margin: 0;
+    font-weight: bold; /* Make the title bold */
+}
+
+.modal-body {
+    position: relative; /* Added to position the pseudo-element correctly */
+    padding: 20px;
+    background-size: cover; /* Ensure the background image covers the entire area */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+
+/* Pseudo-element for faded overlay */
+.modal-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the opacity as needed */
+    z-index: -1; /* Ensure it's behind the content */
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.form-control {
+    background-color: rgba(255, 253, 253, 0.4);  /* Make background transparent */
+    border: 1px solid black; /* Add a 1px black border */
+    border-radius: 4px; /* Add border-radius for rounded corners */
+    padding: 0.5rem; /* Add padding */
+}
+.form-control:focus {
+    outline: none; /* Remove outline when focused */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.form-control::placeholder {
+    color:black;
+     /* Make placeholders bold */
+}
+.form-group label {
+    font-weight: bold; /* Make labels bold */
+}
+/* AddTaskModal custom styles */
+
+/* AddTaskModal custom styles */
+.close-button {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 25px; /* Adjust the font size as needed */
+     /* Adjust the padding as needed */
+}
+
+.modal-title {
+    display: inline-block;
+    /* Ensure the title stays in one row */
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-title-container {
+    /* Align title to the left */
+}
+
+.close-button-container {
+    /* Align close button to the right */
+}
+
+.select-with-icon {
+    position: relative;
+}
+
+.dropdown-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.error {
+    color: red;
+}
+
+

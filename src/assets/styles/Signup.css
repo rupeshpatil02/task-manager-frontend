@@ -1,0 +1,42 @@
+/* Signup.css */
+
+/* Apply transparent background to the card */
+/* Apply transparent background to the form fields */
+.card {
+
+    border: 1px solid black; /* Set the border to black with a thickness of 2px */
+    border-radius: 5px; /* Optional: Add border radius */
+    opacity: 1;
+}
+.form-control {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    color:rgb(1, 1, 1);
+    padding: 10px;
+    width: 100%;
+}
+
+/* Adjust styles for the placeholder text */
+.form-control::placeholder {
+    color: black; /* Placeholder text color */
+    font-weight: bold; /* Make the placeholder text bold */
+}
+
+/* Adjust styles for the focus state of the form fields */
+.form-control:focus {
+    border-color: black;
+    outline: none;
+    box-shadow: none;
+}
+
+
+.btn-primary {
+    display: block;
+    margin: 0 auto; /* Auto margin to center the button horizontally */
+    background-color: #063466; /* Change button background color to purple */
+    border: none; /* Remove button border */
+    color: white; /* Set button text color to white */
+    padding: 10px 50px; /* Adjust button padding */
+    border-radius: 5px; /* Optional: Add border radius */
+}

@@ -1,0 +1,30 @@
+.sidebar-container {
+    width: 240px;
+    height: 100vh;
+    background-color: transparent;
+  }
+  
+  .logo-img {
+    height: 110px;
+    width: 180px;
+    background: transparent;
+    margin-bottom: -10px;
+
+  }
+  
+  .nav-link {
+    font-weight: bold;
+    color: #063466;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color:transparent;
+  }
+  
+  .logout-link {
+    background-color: rgba(173, 216, 230, 0.5);
+  }
+  /* sideNavBar.css */
+.nav-link.active {
+  background-color: #063466 !important;/* Set the background color to purple for the active class */
+  color: white; /* Set the text color to white for better visibility */
+}
